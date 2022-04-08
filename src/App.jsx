@@ -37,6 +37,7 @@ const DragAndDropList =({items,setItems,deleteListItem}) => {
                  <Draggable key={`ID-${item}-${index}`} draggableId={`ID-${item}-${index}`} index={index}>
                    {(provided)=>(
                      <div
+                     style={{width:"20vh",color:"lightcoral"}}
                      ref={provided.innerRef}
                      {...provided.draggableProps}
                      {...provided.dragHandleProps}
